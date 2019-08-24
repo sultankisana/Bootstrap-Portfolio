@@ -3,7 +3,10 @@
 }
 
 body {
-  background: url('../images/background.jpe');
+  /* background-position: center;
+  background-size: cover; 
+  background: url('../images/background.jpeg') no-repeat;
+  */
   font-size: 18px;
   line-height: 34px;
   font-family: 'Arial', 'Helvetica', sans-serif;
@@ -17,36 +20,47 @@ body {
   clear: both;
 }
 
-h1, h2, h3, p {
-  margin-bottom: 20px
+h1 {
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+h2,
+h3,
+p {
+  margin-bottom: 20px;
 }
 
 p:last-child {
   margin-bottom: 0;
 }
 
-h1, h2, h3 {
-   font-family: Georgia, 'Times New Roman', Times, serif;
-   font-weight: 700;
-   color: 4aaaa5;
+h1,
+h2,
+h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 700;
+  color: 4aaaa5;
 }
 
-h1{
+h1 {
   font-size: 30px;
   line-height: 49px;
   border-bottom: 3px solid rgb(221, 221, 221);
   padding-bottom: 20px;
 }
-h2, h3 {
+
+h2,
+h3 {
   font-size: 22px;
 }
-/* header css start */
 
+/* header css start */
 #masthead {
   background: rgb(0, 8, 2);
   margin: 0 0 30px;
   z-index: 99;
-  color: #fff
+  color: #fff;
   overflow: auto;
   border-bottom: 2px solid #ccc;
   position: fixed;
@@ -54,25 +68,25 @@ h2, h3 {
 }
 
 #logo {
- width: 250px;
- height: 90px;
- background: #4a9faa;
- float: left;
- font-family: Georgia, 'Times New Roman', Times, serif; 
- text-align: center;
- line-height: 90px;
- color: rgb(255, 255, 255);
- font-weight: 700;
- font-size: 30px;
- text-decoration: none;
+  width: 250px;
+  height: 90px;
+  background: #4a9faa;
+  float: left;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  line-height: 90px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: 30px;
+  text-decoration: none;
 }
 
-nav{
+nav {
   float: right;
-  margin-top: 25px; 
+  margin-top: 25px;
 }
 
-nav a{
+nav a {
   color: #999;
   text-decoration: none;
   margin-left: 15px;
@@ -83,17 +97,20 @@ nav a{
 }
 
 nav a:first-child {
-    border-left: 0 none;
+  border-left: 0 none;
 }
 
 /* main section css start */
 #main-container {
+  min-height: calc(100vh - 134px);
+  margin-bottom: 50px;
+  overflow: auto;
   padding-top: 130px;
 }
 
 .main-section {
   background: #fff;
-  padding:30px;
+  padding: 30px;
   margin: 0 0 40px 0;
   width: 100%;
   max-width: 650px;
@@ -120,7 +137,9 @@ nav a:first-child {
   margin-bottom: 20px;
 }
 
-h3, .sidebar, h2 {
+h3,
+.sidebar,
+h2 {
   border-bottom: 2px solid #eee;
   padding-bottom: 20px;
   margin-bottom: 15px;
@@ -140,18 +159,15 @@ h3, .sidebar, h2 {
 
 /* Footer css start */
 
-  .footer {
-    background-color: #666666;
-    border-top: solid;
-    border-color: #4aaaa5;
-    border-width: 4px;
-    padding: 10px 0px 50px 0px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-  
+footer {
+  position: relative;
+  padding: 10px 0px 30px 0px !important;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  border-top: solid 10px #4aaaa5 !important;
+  background-color: rgba(0, 0, 0, 1);
+}
 
 /* Portfolio page css start */
 
@@ -168,9 +184,10 @@ h3, .sidebar, h2 {
 }
 
 .work img {
-  width: 100px;
+  height: 250px;
+  width: 100%;
   border: 0 none;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .work h3 {
@@ -181,35 +198,34 @@ h3, .sidebar, h2 {
   position: absolute;
   bottom: 20px;
   padding: 15px;
-  width: 100%
+  width: calc(100% - 20px);
   line-height: 30px;
   margin-bottom: 0px;
+  margin-right: 10px;
+  margin-left: 10px;
   font-weight: 300;
-  
 }
 
 /* contact */
-
 #contact-form ul {
   margin-bottom: 20px;
 }
 
 #contact-form li {
-  margin-bottom: 10px
+  margin-bottom: 10px;
 }
 
 label,
-input[type=text],
-input[type=email],
+input[type='text'],
+input[type='email'],
 textarea {
   display: block;
   width: 100%;
-
 }
 
-input[type=text],
-input[type=email],
-textarea{
+input[type='text'],
+input[type='email'],
+textarea {
   height: 35px;
   border: 1px solid #ddd;
   padding: 0 10px;
@@ -220,9 +236,9 @@ textarea {
   height: 200px;
 }
 
-input[type=submit] {
+input[type='submit'] {
   background: #4aaaa5;
-  border; 0none;
+  border: none;
   color: #fff;
   font-size: 18px;
   padding: 10px 30px;

@@ -67,6 +67,15 @@ h3 {
   width: 100%;
 }
 
+#masthead .navbar {
+  width: 100%;
+  margin-top: 0;
+}
+
+#masthead .navbar .collapse {
+  justify-content: flex-end;
+}
+
 #logo {
   width: 250px;
   height: 90px;
